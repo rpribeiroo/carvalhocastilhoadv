@@ -17,12 +17,12 @@
     :root {
       --bg:          #FAFAF8;
       --bg-warm:     #F5F0E8;
-      --bg-dark:     #1A2744;
+      --bg-dark:     #0E0E0E;
       --gold:        #B8965A;
       --gold-light:  #D4AF7A;
       --gold-dark:   #8C6E3F;
-      --navy:        #1A2744;
-      --navy-mid:    #243560;
+      --navy:        #121212;
+      --navy-mid:    #1E1E1E;
       --body:        #3D3D3D;
       --muted:       #6B7280;
       --border:      #DDD8CE;
@@ -132,7 +132,7 @@
       position: fixed;
       top: 0; left: 0; right: 0;
       z-index: 100;
-      background: rgba(26, 39, 68, 0.97);
+      background: rgba(14, 14, 14, 0.97);
       backdrop-filter: blur(8px);
       border-bottom: 1px solid rgba(184, 150, 90, 0.25);
       transition: box-shadow var(--transition);
@@ -236,7 +236,7 @@
     #hero {
       min-height: 100svh;
       background:
-        linear-gradient(155deg, rgba(26,39,68,0.91) 0%, rgba(26,39,68,0.75) 55%, rgba(26,39,68,0.88) 100%),
+        linear-gradient(155deg, rgba(14,14,14,0.92) 0%, rgba(14,14,14,0.76) 55%, rgba(14,14,14,0.9) 100%),
         url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1600&q=80&auto=format&fit=crop') center/cover no-repeat;
       display: flex;
       align-items: center;
@@ -319,6 +319,7 @@
       width: 100%;
       aspect-ratio: 4/5;
       object-fit: cover;
+      object-position: center 30%;
       border-radius: var(--radius);
     }
     .quem-image-accent {
@@ -412,7 +413,7 @@
       transition: box-shadow var(--transition), transform var(--transition);
     }
     .area-card:hover {
-      box-shadow: 0 12px 40px rgba(26,39,68,0.1);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.12);
       transform: translateY(-4px);
     }
     .card-top-bar {
@@ -609,7 +610,7 @@
 
     /* ─── FOOTER ─────────────────────────────────────────────── */
     footer {
-      background: #111c35;
+      background: #0A0A0A;
       padding: 64px 0 0;
       color: rgba(255,255,255,0.65);
     }
@@ -727,7 +728,7 @@
         flex-direction: column;
         position: absolute;
         top: 72px; left: 0; right: 0;
-        background: rgba(20,31,58,0.98);
+        background: rgba(14,14,14,0.98);
         padding: 20px 24px 28px;
         gap: 20px;
         border-bottom: 1px solid rgba(184,150,90,0.2);
@@ -739,7 +740,7 @@
         margin-top: 148px;
         justify-content: center;
         padding-bottom: 20px;
-        background: rgba(20,31,58,0.98);
+        background: rgba(14,14,14,0.98);
       }
       .values-row { grid-template-columns: 1fr 1fr; }
       .footer-grid { grid-template-columns: 1fr; }
@@ -775,7 +776,7 @@
         <li><a href="#contato">Contato</a></li>
       </ul>
       <div class="nav-cta-wrap">
-        <a href="https://wa.me/5511970692936?text=Olá,%20gostaria%20de%20agendar%20um%20atendimento%20jurídico." class="nav-cta" target="_blank" rel="noopener">Agendar consulta</a>
+        <a href="https://wa.me/5511970692936?text=Ol%C3%A1%2C%20Bruno%20Carvalho%20agradece%20o%20seu%20contato.%20Espero%20que%20esteja%20bem%21%20Como%20posso%20ajudar%3F" class="nav-cta" target="_blank" rel="noopener">Agendar consulta</a>
       </div>
     </div>
   </nav>
@@ -800,7 +801,7 @@
           Atuação principalmente na área trabalhista, além de demandas em Direito Civil, Direito de Família e Sucessões.
         </p>
         <div class="hero-actions">
-          <a href="https://wa.me/5511970692936?text=Olá,%20gostaria%20de%20agendar%20um%20atendimento%20jurídico." class="btn btn-gold" target="_blank" rel="noopener" aria-label="Entre em contato pelo WhatsApp">
+          <a href="https://wa.me/5511970692936?text=Ol%C3%A1%2C%20Bruno%20Carvalho%20agradece%20o%20seu%20contato.%20Espero%20que%20esteja%20bem%21%20Como%20posso%20ajudar%3F" class="btn btn-gold" target="_blank" rel="noopener" aria-label="Entre em contato pelo WhatsApp">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
             Entre em contato
           </a>
@@ -816,8 +817,8 @@
       <div class="quem-grid">
         <div class="quem-image-wrap">
           <img
-            src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80&auto=format&fit=crop"
-            alt="Escritório de advocacia"
+            src="assets/fachada-escritorio.png"
+            alt="Fachada do escritório Carvalho & Castilho Sociedade de Advogados"
             class="quem-image"
             loading="lazy"
           />
@@ -841,7 +842,7 @@
               Nosso compromisso é oferecer um atendimento próximo, humanizado e eficiente, buscando as melhores soluções jurídicas para a proteção dos direitos e interesses de quem confia em nosso trabalho.
             </p>
           </div>
-          <a href="https://wa.me/5511970692936?text=Olá,%20gostaria%20de%20agendar%20um%20atendimento%20jurídico." class="btn btn-gold" target="_blank" rel="noopener">
+          <a href="https://wa.me/5511970692936?text=Ol%C3%A1%2C%20Bruno%20Carvalho%20agradece%20o%20seu%20contato.%20Espero%20que%20esteja%20bem%21%20Como%20posso%20ajudar%3F" class="btn btn-gold" target="_blank" rel="noopener">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
             Entre em contato
           </a>
@@ -894,7 +895,7 @@
             <p class="card-callout">
               Se você está enfrentando algum desses problemas ou tem dúvidas sobre seus direitos, entre em contato conosco e agende uma consulta.
             </p>
-            <a href="https://wa.me/5511970692936?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta%20sobre%20Direito%20Trabalhista." class="btn btn-outline" target="_blank" rel="noopener">
+            <a href="https://wa.me/5511970692936?text=Ol%C3%A1%2C%20Bruno%20Carvalho%20agradece%20o%20seu%20contato.%20Espero%20que%20esteja%20bem%21%20Como%20posso%20ajudar%3F" class="btn btn-outline" target="_blank" rel="noopener">
               Entre em contato
             </a>
           </div>
@@ -914,7 +915,7 @@
             <p class="card-callout">
               Precisa de orientação para resolver uma questão familiar ou sucessória? Entre em contato conosco.
             </p>
-            <a href="https://wa.me/5511970692936?text=Olá,%20gostaria%20de%20orientação%20sobre%20Direito%20de%20Família%20ou%20Sucessões." class="btn btn-outline" target="_blank" rel="noopener">
+            <a href="https://wa.me/5511970692936?text=Ol%C3%A1%2C%20Bruno%20Carvalho%20agradece%20o%20seu%20contato.%20Espero%20que%20esteja%20bem%21%20Como%20posso%20ajudar%3F" class="btn btn-outline" target="_blank" rel="noopener">
               Falar com um advogado
             </a>
           </div>
@@ -934,7 +935,7 @@
             <p class="card-callout">
               Se você teve um direito violado ou busca orientação jurídica, fale com nossa equipe.
             </p>
-            <a href="https://wa.me/5511970692936?text=Olá,%20gostaria%20de%20orientação%20sobre%20uma%20demanda%20cível." class="btn btn-outline" target="_blank" rel="noopener">
+            <a href="https://wa.me/5511970692936?text=Ol%C3%A1%2C%20Bruno%20Carvalho%20agradece%20o%20seu%20contato.%20Espero%20que%20esteja%20bem%21%20Como%20posso%20ajudar%3F" class="btn btn-outline" target="_blank" rel="noopener">
               Falar com nossa equipe
             </a>
           </div>
@@ -950,7 +951,7 @@
       <h2>Tem dúvidas sobre os seus direitos?</h2>
       <p>Entre em contato e agende uma conversa com nossa equipe. Estamos prontos para orientar você.</p>
       <div class="cta-strip-buttons">
-        <a href="https://wa.me/5511970692936?text=Olá,%20gostaria%20de%20agendar%20um%20atendimento%20jurídico%20com%20a%20Carvalho%20%26%20Castilho%20Sociedade%20de%20Advogados." class="btn btn-gold" target="_blank" rel="noopener">
+        <a href="https://wa.me/5511970692936?text=Ol%C3%A1%2C%20Bruno%20Carvalho%20agradece%20o%20seu%20contato.%20Espero%20que%20esteja%20bem%21%20Como%20posso%20ajudar%3F" class="btn btn-gold" target="_blank" rel="noopener">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
           Agendar pelo WhatsApp
         </a>
@@ -1004,13 +1005,13 @@
           </ul>
           <div class="wpp-buttons">
             <div class="wpp-btn-wrap">
-              <a href="https://wa.me/5511970692936?text=Olá,%20gostaria%20de%20agendar%20um%20atendimento%20jurídico%20com%20a%20Carvalho%20%26%20Castilho%20Sociedade%20de%20Advogados." class="btn btn-whatsapp" target="_blank" rel="noopener">
+              <a href="https://wa.me/5511970692936?text=Ol%C3%A1%2C%20Bruno%20Carvalho%20agradece%20o%20seu%20contato.%20Espero%20que%20esteja%20bem%21%20Como%20posso%20ajudar%3F" class="btn btn-whatsapp" target="_blank" rel="noopener">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                 Agendar atendimento pelo WhatsApp
               </a>
             </div>
             <div class="wpp-btn-wrap">
-              <a href="https://wa.me/5511948841029?text=Olá,%20gostaria%20de%20agendar%20um%20atendimento%20jurídico%20com%20a%20Carvalho%20%26%20Castilho%20Sociedade%20de%20Advogados." class="btn btn-outline-white" target="_blank" rel="noopener" style="font-size:0.8rem; padding: 12px 22px;">
+              <a href="https://wa.me/5511948841029?text=Ol%C3%A1%2C%20Bruno%20Carvalho%20agradece%20o%20seu%20contato.%20Espero%20que%20esteja%20bem%21%20Como%20posso%20ajudar%3F" class="btn btn-outline-white" target="_blank" rel="noopener" style="font-size:0.8rem; padding: 12px 22px;">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
                 Segundo contato: (11) 94884-1029
               </a>
@@ -1044,7 +1045,7 @@
           <p class="footer-brand-name">Carvalho &amp; Castilho</p>
           <p class="footer-brand-sub">Sociedade de Advogados</p>
           <p class="footer-tagline">Atendimento jurídico com ética, transparência e dedicação. Comprometidos com a defesa dos seus direitos.</p>
-          <a href="https://wa.me/5511970692936?text=Olá,%20gostaria%20de%20agendar%20um%20atendimento%20jurídico%20com%20a%20Carvalho%20%26%20Castilho%20Sociedade%20de%20Advogados." class="btn btn-outline-white" style="font-size:0.78rem; padding: 10px 20px;" target="_blank" rel="noopener">
+          <a href="https://wa.me/5511970692936?text=Ol%C3%A1%2C%20Bruno%20Carvalho%20agradece%20o%20seu%20contato.%20Espero%20que%20esteja%20bem%21%20Como%20posso%20ajudar%3F" class="btn btn-outline-white" style="font-size:0.78rem; padding: 10px 20px;" target="_blank" rel="noopener">
             Fale conosco
           </a>
         </div>
@@ -1076,7 +1077,7 @@
   </footer>
 
   <!-- WHATSAPP FLOAT BUTTON -->
-  <a href="https://wa.me/5511970692936?text=Olá,%20gostaria%20de%20agendar%20um%20atendimento%20jurídico%20com%20a%20Carvalho%20%26%20Castilho%20Sociedade%20de%20Advogados." class="wpp-float" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
+  <a href="https://wa.me/5511970692936?text=Ol%C3%A1%2C%20Bruno%20Carvalho%20agradece%20o%20seu%20contato.%20Espero%20que%20esteja%20bem%21%20Como%20posso%20ajudar%3F" class="wpp-float" target="_blank" rel="noopener" aria-label="Abrir WhatsApp">
     <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
   </a>
 
